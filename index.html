@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
-    <title>Веб студія</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header class="header">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=, initial-scale=1.0" />
+  <title>Веб студія</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-container">
       <nav class="header-nav">
-        <a class="logo link" href="./index.html"
-          >Web<span class="logo-color">Studio</span></a
-        >
-
-        <ul class="header-list list">
+        <a class="logo link" href="./index.html">Web<span class="logo-color">Studio</span></a>
+        <ul class="header-list list header-mail">
           <li>
             <a class="header-item link current" href="./index.html">Студія</a>
           </li>
@@ -30,30 +27,31 @@
 
           <li><a class="header-item link" href="">Контакти</a></li>
         </ul>
+
       </nav>
 
-      <ul class="list">
+      <ul class="list header-mail">
         <li>
-          <a class="header-tel link" href="tel:+380961111111"
-            >+38 096 11 11 111</a
-          >
+          <a class="header-tel link" href="tel:+380961111111">+38 096 11 11 111</a>
         </li>
         <li>
-          <a class="header-mail link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
+          <a class="header-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
       </ul>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <section class="hero">
+  <main>
+    <section class="hero">
+      <div class="container">
         <h1 class="title-h">Ефективні рішення для вашого бізнесу</h1>
         <button class="btn">Замовити послугу</button>
-      </section>
+      </div>
+    </section>
 
-      <section class="text">
-        <ul class="list">
+    <section class="text">
+      <div class="container">
+        <ul class="list container-content">
           <li>
             <h3 class="section-title-hhh">УВАГА ДО ДЕТАЛЕЙ</h3>
             <p class="section-text">
@@ -65,8 +63,8 @@
           <li>
             <h3 class="section-title-hhh">ПУНКТУАЛЬНІСТЬ</h3>
             <p class="section-text">
-              Завдання організації, особливо рамки і місце навчання кадрів тягне
-              у себе.
+              Завдання організації, особливо рамки і місце навчання кадрів
+              тягне у себе.
             </p>
           </li>
 
@@ -80,16 +78,17 @@
           <li>
             <h3 class="section-title-hhh">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
             <p class="section-text">
-              Значимість цих проблем настільки очевидна, що реалізація планових
-              завдань.
+              Значимість цих проблем настільки очевидна, що реалізація
+              планових завдань.
             </p>
           </li>
         </ul>
-      </section>
-
-      <section>
+      </div>
+    </section>
+    <section class="works">
+      <div class="container">
         <h2 class="section-title-hh">Чим ми займаємося</h2>
-        <ul class="list">
+        <ul class="list container-works">
           <li>
             <img src="./images/imgbox1.jpg" alt="приклад роботи1" width="370" />
           </li>
@@ -100,12 +99,14 @@
             <img src="./images/imgbox3.jpg" alt="приклад роботи3" width="370" />
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <section class="our-team">
+    <section class="our-team">
+      <div class="container ">
         <h2 class="team-title-hh">Наша команда</h2>
-        <ul class="list">
-          <li>
+        <ul class="list container-our-team">
+          <li class="our-team-item">
             <img src="./images/img.jpg" alt="фото" width="270" />
             <h3 class="team-title-hhh">Ігор Дем'яненко</h3>
             <p class="team-text">Product Designer</p>
@@ -129,23 +130,26 @@
             <p class="team-text">UI Designer</p>
           </li>
         </ul>
-      </section>
-    </main>
+      </div>
+      </div>
+    </section>
+  </main>
 
-    <footer class="footer">
-      <a class="logo link" href="./index.html"
-        >Web<span class="logo-color-footer">Studio</span></a
-      >
+  <footer class="footer">
+    <div class="container">
+      <a class="logo link" href="./index.html">Web<span class="logo-color-footer">Studio</span></a>
 
       <address class="adress">
         <p class="adress-text">м. Київ, пр-т Лесі Українки, 26</p>
-        <a class="footer-nav link" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
-        >
-        <a class="footer-nav link" href="tel:+380961111111"
-          >+38 096 11 11 111</a
-        >
+        <ul class="list">
+          <li class="adress-mail"><a class="footer-nav link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="adress-tel"><a class="footer-nav link" href="tel:+380961111111">+38 096 11 11 111</a></li>
+
+        </ul>
       </address>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>

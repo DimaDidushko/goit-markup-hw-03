@@ -54,8 +54,24 @@ ol {
 }
 
 /*-------------body----------*/
-.header {
+.header-container {
   padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 53px;
+}
+
+.header-mail {
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 
 .logo {
@@ -64,6 +80,7 @@ ol {
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.78px;
+  margin-right: 43px;
 }
 
 .logo-color {
@@ -90,11 +107,17 @@ ol {
   color: var(--color-white);
   text-align: center;
   text-transform: uppercase;
+  width: 696px;
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36; /* 136.364% */
   letter-spacing: 2.64px;
   padding-top: 200px;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
 }
 
 .header-item {
@@ -156,6 +179,12 @@ ol {
   letter-spacing: 0.96px;
 }
 
+.container-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .section-title-hhh {
   color: var(--title-color);
   font-size: 14px;
@@ -167,9 +196,10 @@ ol {
 .section-text {
   color: var(--text-color-main);
   font-size: 14px;
-  line-height: 1.71px; /* 171.429% */
+  line-height: 1.71; /* 171.429% */
   letter-spacing: 0.42px;
   margin-top: 10px;
+  padding-bottom: 118px;
 }
 
 .section-title-hh {
@@ -178,17 +208,27 @@ ol {
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 1.08px;
-  padding-top: 118px;
+  margin-bottom: 50px;
 }
 
 .works {
+  padding-bottom: 100px;
+}
+
+.container-works {
   display: flex;
   justify-content: space-between;
-  padding-top: 50px;
+}
+
+.container-our-team {
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
 }
 
 .our-team {
   background-color: #f5f4fa;
+  padding-bottom: 94px;
 }
 
 .our-team.section-text {
@@ -203,12 +243,14 @@ ol {
   text-align: center;
   font-weight: 500;
   letter-spacing: 0.48px;
+  margin-top: 30px;
 }
 
 .team-text {
   color: var(--text-color-main);
   text-align: center;
   letter-spacing: 0.48px;
+  margin-top: 10px;
 }
 
 .team-title-hh {
@@ -218,6 +260,7 @@ ol {
   font-weight: 700;
   letter-spacing: 1.08px;
   padding-top: 94px;
+  margin-bottom: 50px;
 }
 
 /*------------------footer -------------------*/
@@ -225,6 +268,8 @@ ol {
 .footer {
   background-color: #2f303a;
   color: var(--color-white);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-color-footer {
@@ -290,9 +335,17 @@ ol {
 
 .adress-text {
   color: var(--color-white);
-
+  margin-top: 20px;
+  margin-bottom: 9px;
   font-family: "roboto", sans-serif;
   font-size: 14px;
-  line-height: 1.71px; /* 171.429% */
+  line-height: 1.71; /* 171.429% */
   letter-spacing: 0.42px;
+}
+
+.adress-mail {
+  margin-top: 9px;
+}
+.adress-tel {
+  margin-top: 9px;
 }

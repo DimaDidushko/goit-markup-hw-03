@@ -1,171 +1,142 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
-    <title>Веб студія</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="container">
-        <nav class="header-nav">
-          <a class="logo link" href="./index.html"
-            >Web<span class="logo-color">Studio</span></a
-          >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=, initial-scale=1.0" />
+  <title>Портфоліо</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+</head>
 
-          <ul class="header-list list">
-            <li>
-              <a class="header-item link current" href="./index.html">Студія</a>
-            </li>
-            <li>
-              <a class="header-item link" href="./portfolio.html">Портфоліо</a>
-            </li>
+<body>
+  <header class="header">
+    <nav class="header-nav">
+      <a class="logo link" href="./index.html">Web<span class="logo-color">Studio</span></a>
 
-            <li><a class="header-item link" href="">Контакти</a></li>
-          </ul>
-        </nav>
+      <ul class="header-list list">
+        <li>
+          <a class="header-item link" href="./index.html">Студія</a>
+        </li>
+        <li>
+          <a class="header-item link current" href="./portfolio.html">Портфоліо</a>
+        </li>
 
-        <ul class="list">
-          <li>
-            <a class="header-tel link" href="tel:+380961111111"
-              >+38 096 11 11 111</a
-            >
-          </li>
-          <li>
-            <a class="header-mail link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-        </ul>
-      </div>
-    </header>
+        <li><a class="header-item link" href="">Контакти</a></li>
+      </ul>
+    </nav>
 
-    <main>
-      <section class="hero">
-       <div class="container">
-         <h1 class="title-h">Ефективні рішення для вашого бізнесу</h1>
-        <button class="btn">Замовити послугу</button>
-      </section>
+    <ul class="list">
+      <li>
+        <a class="header-tel link" href="tel:+380961111111">+38 096 11 11 111</a>
+      </li>
+      <li>
+        <a class="header-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </li>
+    </ul>
+  </header>
+  <main>
+    <section class="content">
+      <ul class="list">
+        <li>
+          <button class="btn-portfolio">Усі</button>
+        </li>
+        <li>
+          <button class="btn-portfolio">Веб-сайти</button>
+        </li>
+        <li>
+          <button class="btn-portfolio">Додатки</button>
+        </li>
+        <li>
+          <button class="btn-portfolio">Дзизайн</button>
+        </li>
+        <li>
+          <button class="btn-portfolio">Маркетинг</button>
+        </li>
+      </ul>
+      <h1 hidden class="visually-hidden">Gallery</h1>
+      <ul class="list">
+        <li>
+          <a class="link" href="">
+            <img src="./images/images-portfolio/technocrack.jpg " width="370" alt="фото резюме" />
+            <h2 class="portfolio-title-hh">Технокряк</h2>
+            <p class="portfolio-text">Веб сайт</p>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="">
+            <img src="./images/images-portfolio/dyzain-new-orlean.jpg" width="370" alt="фото баскетболістів" />
+            <h2 class="portfolio-title-hh">
+              Постер New Orlean vs Golden Star Дизайн
+            </h2>
+            <p class="portfolio-text">Дизайн</p>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="">
+            <img src="./images/images-portfolio/app-seafood.jpg" width="370" alt="реклама додатку" />
+            <h2 class="portfolio-title-hh">Ресторан Seafood</h2>
+            <p class="portfolio-text">Додаток</p>
+          </a>
+        </li>
+        <li>
+          <a class="link" href=""><img src="./images/images-portfolio/marketitng-headphones.jpg" width="370"
+              alt="фото навушників" />
+            <h2 class="portfolio-title-hh">Проєкт Prime</h2>
+            <p class="portfolio-text">Маркетинг</p>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="">
+            <img src="./images/images-portfolio/boxes.jpg" width="370" alt="фото резюме" />
+            <h2 class="portfolio-title-hh">Проєкт Boxes</h2>
+            <p class="portfolio-text">фото коробок</p>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="">
+            <img src="./images/images-portfolio/site.jpg" width="370" alt="фото монітора" />
+            <h2 class="portfolio-title-hh">Inspiration has no Borders</h2>
+            <p class="portfolio-text">Веб сайт</p>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="">
+            <img src="./images/images-portfolio/dyzainb-book.jpg" width="370" alt="відкрита книга" />
+            <h2 class="portfolio-title-hh">Видання Limited Editiportfolio</h2>
+            <p class="portfolio-text">Дизайн</p>
+          </a>
+        </li>
+        <li>
+          <a class="link" href=""><img src="./images/images-portfolio/marketing-lab.jpg" width="370"
+              alt="фото брилка" />
+            <h2 class="portfolio-title-hh">Проєкт LAB</h2>
+            <p class="portfolio-text">Маркетинг</p>
+          </a>
+        </li>
+        <li>
+          <a class="link" href=""><img src="./images/images-portfolio/app-growing-buisness.jpg" width="370"
+              alt="робота за ноутбуком" />
+            <h2 class="portfolio-title-hh">Growing Business</h2>
+            <p class="portfolio-text">Додаток</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
 
-      <section class="text">
-        <div class="container">
-         <ul class="list">
-          <li>
-            <h3 class="section-title-hhh">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="section-text">
-              Ідейні міркування, і навіть початок повсякденної роботи з
-              формування позиції.
-            </p>
-          </li>
+  <footer class="footer">
+    <a class="logo link" href="./index.html">Web<span class="logo-color-footer">Studio</span></a>
 
-          <li>
-            <h3 class="section-title-hhh">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="section-text">
-              Завдання організації, особливо рамки і місце навчання кадрів тягне
-              у себе.
-            </p>
-          </li>
+    <address class="adress">
+      <p class="adress-text">м. Київ, пр-т Лесі Українки, 26</p>
+      <a class="footer-nav link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      <a class="footer-nav link" href="tel:+380961111111">+38 096 11 11 111</a>
+    </address>
+  </footer>
+</body>
 
-          <li>
-            <h3 class="section-title-hhh">ПЛАНУВАННЯ</h3>
-            <p class="section-text">
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
-          </li>
-
-          <li>
-            <h3 class="section-title-hhh">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="section-text">
-              Значимість цих проблем настільки очевидна, що реалізація планових
-              завдань.
-            </p>
-          </li>
-         </ul>
-         </div>
-      </section>
-
-      <section>
-       <div class="container">
-         <h2 class="section-title-hh">Чим ми займаємося</h2>
-        <ul class="list">
-         <div class="works">
-           <li>
-            <img src="./images/imgbox1.jpg" alt="приклад роботи1" width="370" />
-          </li>
-          <li>
-            <img src="./images/imgbox2.jpg" alt="приклад роботи2" width="370" />
-          </li>
-          <li>
-            <img src="./images/imgbox3.jpg" alt="приклад роботи3" width="370" />
-          </li>
-         </div>
-        </ul>
-       </div>
-      </section>
-
-      <section class="our-team">
-       <div class="container">
-         <h2 class="team-title-hh">Наша команда</h2>
-        <ul class="list">
-          <li>
-            <img src="./images/img.jpg" alt="фото" width="270" />
-            <h3 class="team-title-hhh">Ігор Дем'яненко</h3>
-            <p class="team-text">Product Designer</p>
-          </li>
-
-          <li>
-            <img src="./images/img1.jpg" alt="фото" width="270" />
-            <h3 class="team-title-hhh">Ольга Рєпіна</h3>
-            <p class="team-text">Frontend Developer</p>
-          </li>
-
-          <li>
-            <img src="./images/img2.jpg" alt="фото" width="270" />
-            <h3 class="team-title-hhh">Микола Тарасов</h3>
-            <p class="team-text">Marketing</p>
-          </li>
-
-          <li>
-            <img src="./images/img3.jpg" alt="фото" width="270" />
-            <h3 class="team-title-hhh">Михайло Єрмаков</h3>
-            <p class="team-text">UI Designer</p>
-          </li>
-        </ul>
-       </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container">
-        <a class="logo link" href="./index.html"
-        >Web<span class="logo-color-footer">Studio</span></a
-      >
-
-      <address class="adress">
-        <p class="adress-text">м. Київ, пр-т Лесі Українки, 26</p>
-        <a class="footer-nav link" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
-        >
-        <a class="footer-nav link" href="tel:+380961111111"
-          >+38 096 11 11 111</a
-        >
-      </address>
-      </div>
-    </footer>
-  </body>
 </html>

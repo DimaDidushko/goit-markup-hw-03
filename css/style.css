@@ -28,6 +28,8 @@ ol {
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .link {
   text-decoration: none;
@@ -55,8 +57,6 @@ ol {
 
 /*-------------body----------*/
 .header-container {
-  padding-top: 24px;
-  padding-bottom: 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,13 +65,13 @@ ol {
 .header-nav {
   display: flex;
   align-items: center;
-  gap: 53px;
 }
 
 .header-mail {
   display: flex;
   align-items: center;
-  gap: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .logo {
@@ -80,7 +80,7 @@ ol {
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.78px;
-  margin-right: 43px;
+  margin-right: 93px;
 }
 
 .logo-color {
@@ -120,11 +120,20 @@ ol {
   display: flex;
 }
 
+.item {
+  margin-right: 50px;
+}
+
+.item:last-child {
+  margin-right: 0px;
+}
 .header-item {
   color: var(--title-color);
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-item:focus,
@@ -135,24 +144,26 @@ ol {
   letter-spacing: 0.28px;
 }
 
-.header-tel,
-.header-mail {
+.tel,
+.mail {
   color: var(--text-color-main);
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-.header-tel:focus,
-.header-tel:hover {
+.tel:focus,
+.tel:hover {
   font-size: 14px;
   font-weight: 500;
   color: var(--color-blue);
   letter-spacing: 0.28px;
 }
 
-.header-mail:focus,
-.header-mail:hover {
+.mail:focus,
+.mail:hover {
   font-size: 14px;
   font-weight: 500;
   color: var(--color-blue);
@@ -169,6 +180,8 @@ ol {
   margin-bottom: 200px;
   border-radius: 4px;
   background-color: var(--color-blue);
+  min-height: 50px;
+  min-width: 216px;
 }
 
 .active {
@@ -185,7 +198,6 @@ ol {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.42px;
-  padding-top: 94px;
 }
 
 .text-item {
@@ -195,6 +207,8 @@ ol {
 .container-text {
   display: flex;
   justify-content: space-between;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .section-text {
@@ -203,7 +217,6 @@ ol {
   line-height: 1.71; /* 171.429% */
   letter-spacing: 0.42px;
   margin-top: 10px;
-  padding-bottom: 118px;
 }
 
 .section-title-hh {
@@ -231,14 +244,17 @@ ol {
 }
 
 .card {
+  display: block;
   border: 1px solid white;
   border-top: none;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  height: 368px;
 }
 
 .our-team {
   background-color: #f5f4fa;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -270,7 +286,7 @@ ol {
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 1.08px;
-  padding-top: 94px;
+
   margin-bottom: 50px;
 }
 
@@ -279,12 +295,14 @@ ol {
 .footer {
   background-color: #2f303a;
   color: var(--color-white);
-  padding-top: 60px;
   padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .logo-color-footer {
   color: var(--color-white);
+  margin-bottom: 60px;
+  margin-top: 60px;
 }
 
 .footer-nav {
@@ -304,18 +322,17 @@ ol {
 
 /*-------------------portfolio --------------------*/
 
-.btn-flex {
-  display: flex;
-  justify-content: center;
-  margin-top: 94px;
-}
-
 .btn-portfolio {
   font-weight: 500;
   font-size: 16px;
   color: var(--title-color);
   background-color: #f5f4fa;
   cursor: pointer;
+  background-color: #f5f4fa;
+  border-color: #f5f4fa;
+  border-radius: 4px;
+  min-height: 38px;
+  min-width: 130px;
 }
 
 .btn-portfolio:focus,
@@ -325,6 +342,7 @@ ol {
   color: var(--color-white);
   background-color: var(--color-blue);
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .portfolio-title-hh {
@@ -333,11 +351,13 @@ ol {
   font-weight: 700;
   letter-spacing: 1.08px;
   line-height: 2;
+  margin-left: 24px;
 }
 
 .portfolio-text {
   color: var(--text-color-main);
   line-height: 1.87;
+  margin-left: 24px;
 }
 
 .adress {
@@ -347,16 +367,41 @@ ol {
 .adress-text {
   color: var(--color-white);
   margin-top: 20px;
-  margin-bottom: 9px;
+
   font-family: 'roboto', sans-serif;
   font-size: 14px;
   line-height: 1.71; /* 171.429% */
   letter-spacing: 0.42px;
 }
 
-.adress-mail {
-  margin-top: 9px;
+.portfolio-btns {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
 }
-.adress-tel {
-  margin-top: 9px;
+
+.portfolio-img {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 94px;
+}
+
+.portfolio-item {
+  margin-right: 8px;
+}
+
+.portfolio-item:last-child {
+  margin-right: 0px;
+}
+
+.portfolio-card {
+  display: block;
+  border: 1px solid #f5f4fa;
+  border-top: none;
+  height: 404px;
+  width: 370px;
+  text-align: start;
+  margin-top: 56px;
 }

@@ -57,7 +57,7 @@ ol {
 
 /*-------------body----------*/
 .header {
-  border: b;
+  border-bottom: solid #ececec;
 }
 
 .header-container {
@@ -308,6 +308,11 @@ ol {
 
 /*------------------footer -------------------*/
 
+.content {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
 .footer {
   background-color: #2f303a;
   color: var(--color-white);
@@ -364,8 +369,10 @@ ol {
   background-color: #f5f4fa;
   border-color: #f5f4fa;
   border-radius: 4px;
-  min-height: 38px;
-  min-width: 130px;
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
 }
 
 .btn-portfolio:focus,
@@ -384,27 +391,25 @@ ol {
   font-weight: 700;
   letter-spacing: 1.08px;
   line-height: 2;
-  margin-left: 24px;
 }
 
 .portfolio-text {
   color: var(--text-color-main);
   line-height: 1.87;
-  margin-left: 24px;
+  margin-top: 4px;
 }
 
 .portfolio-btns {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
+  margin-bottom: 50px;
 }
 
 .portfolio-img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  padding-bottom: 94px;
+  gap: 30px;
 }
 
 .portfolio-item {
@@ -415,12 +420,15 @@ ol {
   margin-right: 0px;
 }
 
-.portfolio-card {
+.img-text {
   display: block;
   border: 1px solid #f5f4fa;
   border-top: none;
-  height: 404px;
-  width: 370px;
-  text-align: start;
-  margin-top: 56px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.portfolio-card {
 }
